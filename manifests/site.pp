@@ -19,3 +19,7 @@ node /^web/ {
 node /^ssh/ {
   include role::ssh_server
 }
+
+node /^minecraft/ {
+  include role::minecraft_server
+}
