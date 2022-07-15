@@ -1,6 +1,5 @@
 node default {
-  file {'/root/biscotti.txt':
-    ensure => file,
-    source => 'http://recipes.jots.org/biscotti.html',
-  }
+}
+node 'master.puppet.vm {
+  include role::master_server
 }
